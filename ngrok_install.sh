@@ -6,9 +6,7 @@ do
 		p) password=${OPTARG};;
 	esac
 done
-
-wget -q https://bin.equinox.io/c/4VmDzA7iaHb/ngrok-stable-linux-amd64.zip
-echo $password | sudo  -S apt install unzip -y && unzip -v
-echo $password | sudo  -S unzip ngrok-stable-linux-amd64.zip
-rm -rf ngrok-stable-linux-amd64.zip
+wget https://bin.equinox.io/c/bNyj1mQVY4c/ngrok-v3-stable-linux-amd64.tgz
+echo $password | sudo -S tar xvzf ngrok-v3-stable-linux-amd64.tgz
+echo $password | sudo  -S sudo rm -rf ngrok-v3-stable-linux-amd64.tgz
 echo "[INFO] Ngrok instalation done!"
