@@ -1,3 +1,3 @@
-# apache-spark-ds
+# apache-spark
 
 Alura's spark example
